@@ -1,4 +1,3 @@
-function checking(value){
-    document.getElementById(value).checked= true;
-    
+function check(value){
+    document.getElementById(value).checked = true;
 }

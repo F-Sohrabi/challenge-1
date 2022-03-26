@@ -35,35 +35,37 @@ select{
     select{
         display: none;
     }
+
     input {
         display: none;
       }
     .segment{
         display: flex;
-       border: 0.2rem solid blueviolet;
-        border-radius: 0.3rem; 
+        padding: 0.1rem;
     }
       
     label{
-        width: 100%;
+        border: 0.2rem solid blueviolet;
         text-align: center;
         cursor: pointer;
         padding: 1rem;
     }
     label:first-of-type{
         border-right:none;
-        
+        border-radius: 0.5rem 0 0 0.5rem;
     }
     label:last-of-type{
         border-left: none;
-       
+       border-radius: 0 0.5rem 0.5rem 0;
     }
     label:hover{
         background:darkorchid;
-        color: white;
     }
-    input:checked + label {
+    input[type="radio"]:checked + label {
         background-color: blueviolet;
         color: white;
+    }
+    input[type="radio"] {
+        display: none;
     }
  }

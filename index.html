@@ -16,13 +16,13 @@
      </select>
     <div class="segment">
 
-        <input id="price" type="radio"  checked>
+        <input id="price" type="radio" onchange="check('price')" checked>
         <label  for="price">sort by price</label>
 
-        <input id="name" type="radio" >
+        <input id="name" type="radio" onchange="check('name')">
         <label  for="name">sort by name</label>
 
-        <input id= "relevance" type="radio" >
+        <input id= "relevance" type="radio" onchange="check('relevance')">
         <label  for="relevance">sort by relevance</label>
       </div>
  </div> 
